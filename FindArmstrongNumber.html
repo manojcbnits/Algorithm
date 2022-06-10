@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script type="text/javascript">
+
+    let a = prompt("Please Enter Lower Number");
+    let b = prompt("Please Enter Upper Number");
+
+    for(let i=a;i<=b;i++){
+        var temp = i;
+        var noOfDigits = i.toString().length;
+        var sum = 0;
+        while(temp > 0){
+            let digit = temp%10;
+            temp = parseInt(temp/10);
+            sum += digit**noOfDigits;
+        }
+        if(sum == i){
+            console.log(i);
+        }
+    }
+
+</script>
+
+</body>
+</html>

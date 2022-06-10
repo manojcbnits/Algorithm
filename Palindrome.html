@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script type="text/javascript">
+ 
+// 1)
+
+    // let string = prompt("Please Enter a string");
+    // let stringArray = string.split('');
+    // let stringArrayRev = stringArray.reverse();
+    // let revString = stringArrayRev.join('');
+    // if(string === revString){
+    //     document.write(`${string}: is Palindrome`);
+    // }else{
+    //     document.write(`${string}: is not a Palindrome`);
+    // }
+
+// 2)
+// For Loop
+
+let string = prompt("Please Enter a string");
+let len = string.length;
+let msg = 'It is a Palindrome';
+for(let i = 0; i < len/2 ; i++){
+    if(string[i] != string[len - 1 - i]){
+        msg = 'It is not a Palindrome';
+    }
+}
+
+document.write(`${string}: ${msg}`)
+
+</script>
+
+</body>
+</html>
